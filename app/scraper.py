@@ -1,11 +1,12 @@
 import httpx
-import asyncio
+from typing import Optional, Dict, Any
+from app.utils import format_size, format_downloads, parse_owner, format_cpu
 
 
 class AptoideScraper:
     BASE_URL = "https://ws75.aptoide.com/api/7/app/get"
 
-    async def get_raw_json(self, package_name: str):
+    async def get_app_details(self, package_name: str) -> Optional[Dict[str, Any]]:
 
         print(f"Connecting to {self.BASE_URL} for {package_name}...")
 
@@ -13,51 +14,45 @@ class AptoideScraper:
             try:
                 response = await client.get(self.BASE_URL, params={"package_name": package_name})
 
-                print(f"Status Code: {response.status_code}")
+                if response.status_code != 200:
+                    print(f"Status Code: {response.status_code}")
+                    return None
 
-                if response.status_code == 200:
-                    raw_json = response.json()
+                raw_json = response.json()
 
-                    app_data = raw_json['nodes']['meta']['data']
+                if (not raw_json or
+                        'nodes' not in raw_json or
+                        'meta' not in raw_json['nodes'] or
+                        'data' not in raw_json['nodes']['meta']):
+                    return None
 
-                    file_info = app_data.get('file', {})
-                    stats_info = app_data.get('stats', {})
-                    sig_info = file_info.get('signature', {})
-                    hardware_info = file_info.get('hardware', {})
+                app_data = raw_json['nodes']['meta']['data']
 
-                    name = app_data.get('name', 'None')
-                    package_id = app_data.get('package', 'None')
-                    version = file_info.get('vername', 'None')
-                    release_date = file_info.get('added', 'None')
-                    min_screen = hardware_info.get('screen', 'None')
-                    sha1 = sig_info.get('sha1', 'None')
+                file_info = app_data.get('file', {})
+                stats_info = app_data.get('stats', {})
+                sig_info = file_info.get('signature', {})
+                hardware_info = file_info.get('hardware', {})
 
+                owner = parse_owner(sig_info.get('owner', ''))
+                cpu_list = hardware_info.get('cpus', [])
 
-                    # These need additional formatting
-                    size_raw = file_info.get('filesize', -1)
-                    downloads_raw = stats_info.get('downloads', -1)
-                    owner_string = sig_info.get('owner', 'None')
-                    cpu_list = hardware_info.get('cpus', [])
-
-                    print(f"name: {name}")
-                    print(f"Raw Size: {size_raw}")
-                    print(f"Raw Downloads: {downloads_raw}")
-                    print(f"version: {version}")
-                    print(f"release date: {release_date}")
-                    print(f"min_screen: {min_screen}")
-                    print(f"raw supported cpus: {cpu_list}")
-                    print(f"package_id: {package_id}")
-                    print(f"sha1_signature: {sha1}")
-                    print(f"Raw Owner: {owner_string}")
-
-
-                else:
-                    print("Error: Failed to fetch data.")
+                return {
+                    "name": app_data.get('name', 'Unknown'),
+                    "size": format_size(file_info.get('filesize', 0)),
+                    "downloads": format_downloads(stats_info.get('downloads', 0)),
+                    "version": file_info.get('vername', 'Unknown'),
+                    "release_date": file_info.get('added', app_data.get('added')),
+                    "min_screen": hardware_info.get('screen', 'Unknown'),
+                    "supported_cpu": format_cpu(cpu_list),
+                    "package_id": app_data.get('package', package_name),
+                    "sha1_signature": sig_info.get('sha1', 'N/A'),
+                    "developer_cn": owner.get('developer_cn', 'Unknown'),
+                    "organization": owner.get('organization', 'Unknown'),
+                    "local": owner.get('local', 'Unknown'),
+                    "country": owner.get('country', 'Unknown'),
+                    "state_city": owner.get('state_city', 'Unknown')
+                }
 
             except Exception as e:
                 print(f"Exception: {e}")
-
-
-if __name__ == "__main__":
-    scraper = AptoideScraper()
-    asyncio.run(scraper.get_raw_json("com.facebook.katana"))
+                return None
