@@ -77,17 +77,20 @@ curl http://localhost:8000/aptoide?package_name=com.facebook.katana
  python -m pytest -m live
 ```
 
-# Design Decision and Assumptions
+# Design Decision
 
 ## 1. API Scraping vs HTML Scraping
-I chose to look for the API endpoint first because if avalaible it's the more reliable and faster way than scraping the HTML.
+- **Reliability:** APIs change less frequently than HTML DOM structures.
+- **Performance:** Returning JSON is significantly faster and consumes less bandwidth than parsing full HTML pages.
+- **Stability:** Avoids issues with dynamic JavaScript rendering.
 
-## 2. Service oriented architecture
-I chose to use a service oriented architecture because it's the most scalable way to handle this kind of scenario.
-## 3. Scalabilty
+## 3. Scalability and Architecture
+- **Single Client Instance:** Instead of opening a new connection for every single request (which is slow), I use FastAPI's `lifespan` to create one shared `httpx` client when the app starts. This keeps the connection open and makes scraping much faster.
+- **Dependency Injection:** I inject this client into the scraper, which makes the code cleaner and easier to test.  
     
 ## 4. Testing
-I chose to do live tests too because when scraping it helps to check if there was any change in the data structure or api url
+- **Unit Tests (`tests/unit`):** Fast, offline tests using mocked responses. This validates that *my parsing logic* is correct, assuming the data format hasn't changed.
+- **Live Tests (`tests/live`):** Slower, integration tests that hit the *real* Aptoide API. These are crucial for a scraper to detect if the external API schema has changed.
 
 
 
