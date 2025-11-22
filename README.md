@@ -1,4 +1,5 @@
-# tech_challenge_aptoide
+# Tech Challenge Aptoide - Aptoide Scraper
+
 
 # Setup
 ## Prerequisites
@@ -84,11 +85,11 @@ curl http://localhost:8000/aptoide?package_name=com.facebook.katana
 - **Performance:** Returning JSON is significantly faster and consumes less bandwidth than parsing full HTML pages.
 - **Stability:** Avoids issues with dynamic JavaScript rendering.
 
-## 3. Scalability and Architecture
+## 2. Scalability and Architecture
 - **Single Client Instance:** Instead of opening a new connection for every single request (which is slow), I use FastAPI's `lifespan` to create one shared `httpx` client when the app starts. This keeps the connection open and makes scraping much faster.
 - **Dependency Injection:** I inject this client into the scraper, which makes the code cleaner and easier to test.  
     
-## 4. Testing
+## 3. Testing
 - **Unit Tests (`tests/unit`):** Fast, offline tests using mocked responses. This validates that *my parsing logic* is correct, assuming the data format hasn't changed.
 - **Live Tests (`tests/live`):** Slower, integration tests that hit the *real* Aptoide API. These are crucial for a scraper to detect if the external API schema has changed.
 
