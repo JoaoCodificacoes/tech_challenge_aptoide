@@ -38,12 +38,12 @@ async def test_get_app_details_success(scraper, mock_json_response):
 
     assert result["name"] == "Facebook"
     assert result["package_id"] == "com.facebook.katana"
-    assert result["version"] == "540.0.0.44.148"
-    assert result["release_date"] == "2025-11-20 12:41:04"
+    assert result["version"] == "540.0.0.49.148"
+    assert result["release_date"] == "2025-11-21 19:13:53"
 
-    assert result["size"] == "142.47 MB"
+    assert result["size"] == "143.99 MB"
     assert result["min_screen"] == "SMALL"
-    assert result["supported_cpu"] == "arm64-v8a"
+    assert result["supported_cpu"] == "armeabi-v7a"
 
     assert result["downloads"] == "2B"
 
