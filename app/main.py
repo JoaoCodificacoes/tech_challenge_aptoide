@@ -1,14 +1,14 @@
 import logging
+
 import httpx
 from contextlib import asynccontextmanager
-from fastapi import FastAPI, Query, HTTPException
+from fastapi import FastAPI, Query, HTTPException,Request
 from app.scraper import AptoideScraper
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("api")
 
 
-http_client: httpx.AsyncClient = None
 
 
 @asynccontextmanager
@@ -18,11 +18,11 @@ async def lifespan(app: FastAPI):
     1. Startup: Create ONE persistent HTTP client.
     2. Shutdown: Close it cleanly.
     """
-    global http_client
     logger.info("Initializing connection")
 
     # Reusing this client prevents creating a new SSL handshake for every request
     http_client = httpx.AsyncClient(timeout=10.0)
+    app.state.http_client = http_client
     yield
 
     logger.info("Closing connection")
@@ -36,12 +36,14 @@ app = FastAPI(
 
 @app.get("/aptoide")
 async def aptoide_scraper(
+        request: Request,
         package_name: str = Query(
             ...,
             title="Package Name",
         )
 ):
-    scraper = AptoideScraper(http_client)
+    client = request.app.state.http_client
+    scraper = AptoideScraper(client)
 
     result = await scraper.get_app_details(package_name)
 

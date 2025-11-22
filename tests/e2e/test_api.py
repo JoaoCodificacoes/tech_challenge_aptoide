@@ -3,6 +3,7 @@ from unittest.mock import AsyncMock, patch
 from app.main import app
 
 client = TestClient(app)
+app.state.http_client = AsyncMock()
 
 MOCK_RESULT = {
     "name": "Facebook",
