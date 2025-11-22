@@ -1,0 +1,761 @@
+{
+  "info": {
+    "status": "OK",
+    "time": {
+      "seconds": 0.029612064361572266,
+      "human": "30 milliseconds"
+    }
+  },
+  "nodes": {
+    "meta": {
+      "info": {
+        "status": "OK",
+        "time": {
+          "seconds": 0.04133296012878418,
+          "human": "41 milliseconds"
+        }
+      },
+      "data": {
+        "id": 72446842,
+        "name": "Facebook",
+        "package": "com.facebook.katana",
+        "uname": "facebook",
+        "size": 150982529,
+        "icon": "https://pool.img.aptoide.com/appupdater/3a358df023050199d97d4ee04ca27f00_icon.png",
+        "graphic": "https://pool.img.aptoide.com/appupdater/6bf7f638d02f88283c699a82ce97b017_fgraphic.png",
+        "added": "2020-04-29 17:30:07",
+        "modified": "2025-11-21 19:13:54",
+        "updated": "2025-11-22 01:46:17",
+        "main_package": null,
+        "age": {
+          "name": "all",
+          "title": "Everyone",
+          "pegi": "PEGI-3",
+          "rating": 0
+        },
+        "developer": {
+          "id": 1907,
+          "name": "Facebook",
+          "website": "https://www.facebook.com/facebook",
+          "email": "facebook.android@fb.com",
+          "privacy": "https://www.facebook.com/about/privacy/"
+        },
+        "store": {
+          "id": 2899481,
+          "name": "appupdater",
+          "avatar": "https://pool.img.aptoide.com/appupdater/64332bc9651ad8662141e9f5f5a2c034_ravatar.png",
+          "appearance": {
+            "theme": "default",
+            "description": "Update Apps"
+          },
+          "stats": {
+            "apps": 307342,
+            "subscribers": 93748,
+            "downloads": 0
+          }
+        },
+        "file": {
+          "vername": "540.0.0.49.148",
+          "vercode": 467016879,
+          "md5sum": "0302fb1169e54b6b7d8ffc0097418a72",
+          "filesize": 150982529,
+          "signature": {
+            "sha1": "CC:69:EF:02:CC:1D:98:0C:EB:FC:31:4D:E9:2E:CB:63:22:AD:29:FE",
+            "owner": "C=US, ST=California, L=Menlo Park, O=Meta Platforms Inc., OU=Meta Mobile, CN=Meta Platforms Inc."
+          },
+          "added": "2025-11-21 19:13:53",
+          "path": "https://pool.apk.aptoide.com/appupdater/com-facebook-katana-467016879-72446842-0302fb1169e54b6b7d8ffc0097418a72.apk",
+          "path_alt": "https://pool.apk.aptoide.com/appupdater/com-facebook-katana-467016879-72446842-0302fb1169e54b6b7d8ffc0097418a72.apk",
+          "hardware": {
+            "sdk": 30,
+            "screen": "SMALL",
+            "gles": 2,
+            "cpus": [
+              "armeabi-v7a"
+            ],
+            "densities": [
+              [
+                200,
+                213
+              ],
+              [
+                300,
+                213
+              ],
+              [
+                400,
+                213
+              ],
+              [
+                500,
+                213
+              ],
+              [
+                200,
+                240
+              ],
+              [
+                300,
+                240
+              ],
+              [
+                400,
+                240
+              ],
+              [
+                500,
+                240
+              ],
+              [
+                200,
+                120
+              ],
+              [
+                300,
+                120
+              ],
+              [
+                400,
+                120
+              ],
+              [
+                500,
+                120
+              ],
+              [
+                200,
+                160
+              ],
+              [
+                300,
+                160
+              ],
+              [
+                400,
+                160
+              ],
+              [
+                500,
+                160
+              ]
+            ],
+            "dependencies": []
+          },
+          "malware": {
+            "rank": "TRUSTED",
+            "reason": {
+              "thirdparty_validated": {
+                "date": "2025-11-21",
+                "store": "Google Play"
+              },
+              "signature_validated": {
+                "date": "2025-11-21",
+                "status": "review"
+              }
+            },
+            "added": "2025-11-21 19:13:54",
+            "modified": "2025-11-21 19:14:10"
+          },
+          "flags": {
+            "votes": [
+              {
+                "type": "FAKE",
+                "count": 0
+              },
+              {
+                "type": "FREEZE",
+                "count": 0
+              },
+              {
+                "type": "GOOD",
+                "count": 0
+              },
+              {
+                "type": "LICENSE",
+                "count": 0
+              },
+              {
+                "type": "VIRUS",
+                "count": 0
+              }
+            ]
+          },
+          "used_features": [
+            "android.hardware.bluetooth",
+            "android.hardware.faketouch",
+            "android.hardware.screen.landscape",
+            "android.hardware.screen.portrait"
+          ],
+          "used_permissions": [
+            "android.permission.ACCESS_ADSERVICES_AD_ID",
+            "android.permission.ACCESS_ADSERVICES_ATTRIBUTION",
+            "android.permission.ACCESS_ADSERVICES_CUSTOM_AUDIENCE",
+            "android.permission.ACCESS_ADSERVICES_TOPICS",
+            "android.permission.ACCESS_COARSE_LOCATION",
+            "android.permission.ACCESS_FINE_LOCATION",
+            "android.permission.ACCESS_MEDIA_LOCATION",
+            "android.permission.ACCESS_NETWORK_STATE",
+            "android.permission.ACCESS_WIFI_STATE",
+            "android.permission.AUTHENTICATE_ACCOUNTS",
+            "android.permission.BATTERY_STATS",
+            "android.permission.BLUETOOTH",
+            "android.permission.BLUETOOTH_CONNECT",
+            "android.permission.BROADCAST_STICKY",
+            "android.permission.CAMERA",
+            "android.permission.CAPTURE_VIDEO_OUTPUT",
+            "android.permission.CHANGE_NETWORK_STATE",
+            "android.permission.CHANGE_WIFI_STATE",
+            "android.permission.CREDENTIAL_MANAGER_SET_ALLOWED_PROVIDERS",
+            "android.permission.DETECT_SCREEN_CAPTURE",
+            "android.permission.DETECT_SCREEN_RECORDING",
+            "android.permission.DOWNLOAD_WITHOUT_NOTIFICATION",
+            "android.permission.FOREGROUND_SERVICE",
+            "android.permission.FOREGROUND_SERVICE_CAMERA",
+            "android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE",
+            "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+            "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+            "android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION",
+            "android.permission.FOREGROUND_SERVICE_MICROPHONE",
+            "android.permission.FOREGROUND_SERVICE_PHONE_CALL",
+            "android.permission.GET_ACCOUNTS",
+            "android.permission.GET_TASKS",
+            "android.permission.INTERNET",
+            "android.permission.MANAGE_ACCOUNTS",
+            "android.permission.MANAGE_OWN_CALLS",
+            "android.permission.MODIFY_AUDIO_SETTINGS",
+            "android.permission.NFC",
+            "android.permission.POST_NOTIFICATIONS",
+            "android.permission.READ_BASIC_PHONE_STATE",
+            "android.permission.READ_CALENDAR",
+            "android.permission.READ_CONTACTS",
+            "android.permission.READ_EXTERNAL_STORAGE",
+            "android.permission.READ_MEDIA_IMAGES",
+            "android.permission.READ_MEDIA_VIDEO",
+            "android.permission.READ_MEDIA_VISUAL_USER_SELECTED",
+            "android.permission.READ_PHONE_STATE",
+            "android.permission.READ_PROFILE",
+            "android.permission.READ_SYNC_SETTINGS",
+            "android.permission.RECEIVE_BOOT_COMPLETED",
+            "android.permission.RECORD_AUDIO",
+            "android.permission.REORDER_TASKS",
+            "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS",
+            "android.permission.RUN_USER_INITIATED_JOBS",
+            "android.permission.SYSTEM_ALERT_WINDOW",
+            "android.permission.USE_BIOMETRIC",
+            "android.permission.USE_FINGERPRINT",
+            "android.permission.USE_FULL_SCREEN_INTENT",
+            "android.permission.VIBRATE",
+            "android.permission.WAKE_LOCK",
+            "android.permission.WRITE_CALENDAR",
+            "android.permission.WRITE_CONTACTS",
+            "android.permission.WRITE_EXTERNAL_STORAGE",
+            "android.permission.WRITE_SYNC_SETTINGS",
+            "com.amazon.device.messaging.permission.RECEIVE",
+            "com.android.launcher.permission.INSTALL_SHORTCUT",
+            "com.android.vending.BILLING",
+            "com.facebook.appmanager.UNPROTECTED_API_ACCESS",
+            "com.facebook.katana.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            "com.facebook.katana.permission.CREATE_SHORTCUT",
+            "com.facebook.katana.permission.CROSS_PROCESS_BROADCAST_MANAGER",
+            "com.facebook.katana.permission.RECEIVE_ADM_MESSAGE",
+            "com.facebook.katana.provider.ACCESS",
+            "com.facebook.mlite.provider.ACCESS",
+            "com.facebook.orca.provider.ACCESS",
+            "com.facebook.pages.app.provider.ACCESS",
+            "com.facebook.permission.prod.FB_APP_COMMUNICATION",
+            "com.facebook.receiver.permission.ACCESS",
+            "com.facebook.services.identity.FEO2",
+            "com.google.android.c2dm.permission.RECEIVE",
+            "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+            "com.google.android.gms.permission.AD_ID",
+            "com.google.android.providers.gsf.permission.READ_GSERVICES",
+            "com.htc.launcher.permission.READ_SETTINGS",
+            "com.htc.launcher.permission.UPDATE_SHORTCUT",
+            "com.motorola.launcher3.permission.UNREAD_BADGE",
+            "com.nokia.pushnotifications.permission.RECEIVE",
+            "com.oculus.twilight.provider.ACCESS",
+            "com.sec.android.provider.badge.permission.READ",
+            "com.sec.android.provider.badge.permission.WRITE",
+            "com.sonyericsson.home.permission.BROADCAST_BADGE",
+            "com.sonymobile.home.permission.PROVIDER_INSERT_BADGE"
+          ],
+          "tags": [
+            "input.pointer",
+            "leanback.input.pointer"
+          ]
+        },
+        "media": {
+          "keywords": [
+            "facebook",
+            "katana",
+            "social"
+          ],
+          "description": "Facebook is a multifaceted social media platform that serves as a hub for connecting with people, exploring diverse interests, and expanding your world. Developed by Meta and available for download on your Android device, Facebook is a platform teeming with unique features designed to enhance user experience.\r\n\r\nFacebook is not just an application; it's a world in itself, laden with a myriad of functionalities. One of its prime features is the Feed you\u2019ll find as soon as you download it an log in. Here you\u2019ll discover the latest publications from your friends, the most recent news and quite a lot of surprises. Another popular feature of Facebook app is the Marketplace, a virtual bazaar where users can discover and purchase a wide range of items. From everyday essentials to unique and rare finds, the Marketplace is a treasure trove of items waiting to be discovered. It's an interactive marketplace that can help users transform their hobbies into a more engaging experience. Whether you're a collector of vintage items or a tech enthusiast looking for the latest gadgets, the Marketplace has something for everyone.\r\n\r\nBeyond shopping, Facebook offers a personalized Feed. This feature allows users to curate the content they see, eliminating irrelevant posts and focusing on what truly interests them. It's a perfect tool for quick entertainment as well as for sparking inspiration. The Feed is a dynamic space where users can discover new content, engage with posts that resonate with them, and share their thoughts with the world.\r\n\r\nFacebook also includes a feature for watching reels, short videos that offer a quick dose of entertainment. Whether it's a funny clip, a cooking tutorial, or a dance challenge, reels provide a fun and engaging way to consume content.\r\n\r\nAnother noteworthy aspect of the Facebook app is its community-focused design. It enables users to connect with people worldwide, making it easy to catch up with friends, family, and influential figures. Moreover, joining groups is a breeze, providing an opportunity to learn from others' experiences and share your own. Whether it's a group for book lovers, fitness enthusiasts, or aspiring chefs, Facebook groups provide a platform for users to connect with like-minded individuals and engage in meaningful conversations.\r\n\r\nFacebook offers an avenue for creativity with its reel-making feature. Users can create engaging reels from trending templates or by utilizing the application's comprehensive editing tools. It's a chance for users to let their creativity shine, sharing their world with others. Whether you're a budding filmmaker, a passionate dancer, or just someone who loves to share snippets of their life, the reel-making feature provides a platform for you to express yourself.\r\n\r\nThe app also allows users to customize their profiles to better control their online persona and the audience for their posts. From profile pictures to bio descriptions, users have the freedom to shape their online identity. Moreover, Facebook provides privacy settings that allow users to control who can see their posts, providing a safe and secure environment for sharing content.\r\n\r\nFor those looking to monetize their hobbies, Facebook provides an opportunity to become a creator or sell items on the Marketplace. As a creator, users can earn money by sharing engaging content and building a loyal following. On the other hand, selling items on the Marketplace provides an easy and convenient way to earn money from unused items.\r\n\r\nThe Facebook app also includes a feature for sharing stories, ephemeral posts that disappear after 24 hours. This feature allows users to celebrate everyday moments in a candid, carefree manner. Whether it's a snapshot of a beautiful sunset, a video of a fun night out, or a heartfelt message, stories provide a platform for users to share their everyday moments.\r\n\r\nFacebook\u2019s Android app is a comprehensive social platform teeming with features. Whether you're looking to connect with others, explore new interests, or take your hobbies to the next level, the Facebook download for Android has you covered. It's more than just an app; it's a platform that connects people, fosters creativity, and provides a space for users to express themselves and explore the world around them",
+          "summary": "",
+          "news": "- Like posts, photos and Pages when you're offline\n- Remove tags you've created\n- Remove tags of yourself that your friends have created\n- Turn post notifications on and off\n- Improvements for speed and reliability",
+          "videos": [
+            {
+              "type": "YOUTUBE",
+              "url": "https://www.youtube.com/embed/nt7j4taPB5E",
+              "thumbnail": "https://i2.ytimg.com/vi/nt7j4taPB5E/hqdefault.jpg"
+            }
+          ],
+          "screenshots": [
+            {
+              "url": "https://pool.img.aptoide.com/appupdater/d1dc79ebfb328ff9c3e25a6914950661_screen.png",
+              "height": 800,
+              "width": 370
+            },
+            {
+              "url": "https://pool.img.aptoide.com/appupdater/182cdba1780bf046a12f3b5629b11216_screen.png",
+              "height": 800,
+              "width": 370
+            },
+            {
+              "url": "https://pool.img.aptoide.com/appupdater/376bd3ff18f8cead67cc85be09f1f9ea_screen.png",
+              "height": 800,
+              "width": 370
+            },
+            {
+              "url": "https://pool.img.aptoide.com/appupdater/f2dfe35e135f019ae56fbf31f86e803c_screen.png",
+              "height": 800,
+              "width": 370
+            },
+            {
+              "url": "https://pool.img.aptoide.com/appupdater/60ed3cfe05233d4d360d338d9e169831_screen.png",
+              "height": 800,
+              "width": 370
+            },
+            {
+              "url": "https://pool.img.aptoide.com/appupdater/7fb8169c20277c6d2e679c5104aa800f_screen.png",
+              "height": 800,
+              "width": 370
+            },
+            {
+              "url": "https://pool.img.aptoide.com/appupdater/5c50feb5fcd292f27f03a75d8f479d6d_screen.png",
+              "height": 800,
+              "width": 370
+            },
+            {
+              "url": "https://pool.img.aptoide.com/appupdater/d97086fb56ace959fa15d8405985c9c0_screen.png",
+              "height": 800,
+              "width": 370
+            }
+          ]
+        },
+        "urls": {
+          "w": "https://facebook.en.aptoide.com/?store_name=appupdater&app_id=72446842",
+          "m": "https://facebook.en.aptoide.com/?store_name=appupdater&app_id=72446842"
+        },
+        "stats": {
+          "rating": {
+            "avg": 2.77,
+            "total": 70,
+            "votes": [
+              {
+                "value": 5,
+                "count": 31
+              },
+              {
+                "value": 4,
+                "count": 0
+              },
+              {
+                "value": 3,
+                "count": 0
+              },
+              {
+                "value": 2,
+                "count": 0
+              },
+              {
+                "value": 1,
+                "count": 39
+              }
+            ]
+          },
+          "prating": {
+            "avg": 3.83,
+            "total": 25863,
+            "votes": [
+              {
+                "value": 5,
+                "count": 11860
+              },
+              {
+                "value": 4,
+                "count": 6386
+              },
+              {
+                "value": 3,
+                "count": 3018
+              },
+              {
+                "value": 2,
+                "count": 522
+              },
+              {
+                "value": 1,
+                "count": 4077
+              }
+            ]
+          },
+          "downloads": 2000000000,
+          "pdownloads": 2000000000
+        },
+        "aab": null,
+        "obb": null,
+        "pay": null,
+        "appcoins": {
+          "advertising": false,
+          "billing": false,
+          "flags": []
+        },
+        "soft_locks": [],
+        "geo": null
+      }
+    },
+    "versions": {
+      "info": {
+        "status": "OK",
+        "time": {
+          "seconds": 0.028784990310668945,
+          "human": "29 milliseconds"
+        }
+      },
+      "list": [
+        {
+          "id": 72446842,
+          "name": "Facebook",
+          "package": "com.facebook.katana",
+          "uname": "facebook",
+          "size": 150982529,
+          "icon": "https://pool.img.aptoide.com/appupdater/3a358df023050199d97d4ee04ca27f00_icon.png",
+          "graphic": "https://pool.img.aptoide.com/appupdater/6bf7f638d02f88283c699a82ce97b017_fgraphic.png",
+          "added": "2020-04-29 17:30:07",
+          "modified": "2025-11-21 19:13:54",
+          "updated": "2025-11-22 01:46:17",
+          "uptype": "webservice",
+          "store": {
+            "id": 2899481,
+            "name": "appupdater",
+            "avatar": "https://pool.img.aptoide.com/appupdater/64332bc9651ad8662141e9f5f5a2c034_ravatar.png",
+            "appearance": {
+              "theme": "default",
+              "description": "Update Apps"
+            },
+            "stats": {
+              "apps": 307342,
+              "subscribers": 93748,
+              "downloads": 0
+            }
+          },
+          "file": {
+            "vername": "540.0.0.49.148",
+            "vercode": 467016879,
+            "md5sum": "0302fb1169e54b6b7d8ffc0097418a72",
+            "filesize": 150982529,
+            "added": "2025-11-21 19:13:53",
+            "tags": [],
+            "malware": {
+              "rank": "TRUSTED"
+            },
+            "hardware": {
+              "sdk": 30,
+              "screen": "SMALL",
+              "gles": 2,
+              "cpus": [
+                "armeabi-v7a"
+              ],
+              "densities": [
+                [
+                  200,
+                  213
+                ],
+                [
+                  300,
+                  213
+                ],
+                [
+                  400,
+                  213
+                ],
+                [
+                  500,
+                  213
+                ],
+                [
+                  200,
+                  240
+                ],
+                [
+                  300,
+                  240
+                ],
+                [
+                  400,
+                  240
+                ],
+                [
+                  500,
+                  240
+                ],
+                [
+                  200,
+                  120
+                ],
+                [
+                  300,
+                  120
+                ],
+                [
+                  400,
+                  120
+                ],
+                [
+                  500,
+                  120
+                ],
+                [
+                  200,
+                  160
+                ],
+                [
+                  300,
+                  160
+                ],
+                [
+                  400,
+                  160
+                ],
+                [
+                  500,
+                  160
+                ]
+              ],
+              "dependencies": []
+            }
+          },
+          "stats": {
+            "downloads": 2000000000,
+            "pdownloads": 2000000000,
+            "rating": {
+              "avg": 2.77,
+              "total": 70
+            },
+            "prating": {
+              "avg": 3.83,
+              "total": 25863
+            }
+          },
+          "obb": null,
+          "appcoins": {
+            "advertising": false,
+            "billing": false,
+            "flags": []
+          },
+          "urls": {}
+        },
+        {
+          "id": 72419623,
+          "name": "Facebook",
+          "package": "com.facebook.katana",
+          "uname": "facebook",
+          "size": 149389794,
+          "icon": "https://pool.img.aptoide.com/voyager89verona/3a358df023050199d97d4ee04ca27f00_icon.png",
+          "graphic": "https://pool.img.aptoide.com/voyager89verona/6bf7f638d02f88283c699a82ce97b017_fgraphic.png",
+          "added": "2018-03-24 09:46:38",
+          "modified": "2025-11-20 12:41:04",
+          "updated": "2025-11-20 12:41:04",
+          "uptype": "aptuploader",
+          "store": {
+            "id": 1967666,
+            "name": "voyager89verona",
+            "avatar": "https://pool.img.aptoide.com/voyager89verona/4cbe103ced8a3b148b03cd588516df77_ravatar.jpg",
+            "appearance": {
+              "theme": "default",
+              "description": "STORE"
+            },
+            "stats": {
+              "apps": 79,
+              "subscribers": 574,
+              "downloads": 0
+            }
+          },
+          "file": {
+            "vername": "540.0.0.44.148",
+            "vercode": 467016176,
+            "md5sum": "8835cd0fcdad6695c4a62d0bb2c3103d",
+            "filesize": 149389794,
+            "added": "2025-11-20 12:41:04",
+            "tags": [],
+            "malware": {
+              "rank": "TRUSTED"
+            },
+            "hardware": {
+              "sdk": 30,
+              "screen": "SMALL",
+              "gles": 2,
+              "cpus": [
+                "arm64-v8a"
+              ],
+              "densities": [
+                [
+                  200,
+                  360
+                ],
+                [
+                  300,
+                  360
+                ],
+                [
+                  400,
+                  360
+                ],
+                [
+                  500,
+                  360
+                ],
+                [
+                  200,
+                  400
+                ],
+                [
+                  300,
+                  400
+                ],
+                [
+                  400,
+                  400
+                ],
+                [
+                  500,
+                  400
+                ],
+                [
+                  200,
+                  420
+                ],
+                [
+                  300,
+                  420
+                ],
+                [
+                  400,
+                  420
+                ],
+                [
+                  500,
+                  420
+                ],
+                [
+                  200,
+                  480
+                ],
+                [
+                  300,
+                  480
+                ],
+                [
+                  400,
+                  480
+                ],
+                [
+                  500,
+                  480
+                ]
+              ],
+              "dependencies": []
+            }
+          },
+          "stats": {
+            "downloads": 2000000000,
+            "pdownloads": 2000000000,
+            "rating": {
+              "avg": 0,
+              "total": 0
+            },
+            "prating": {
+              "avg": 3.83,
+              "total": 25863
+            }
+          },
+          "obb": null,
+          "appcoins": {
+            "advertising": false,
+            "billing": false,
+            "flags": []
+          },
+          "urls": {}
+        },
+        {
+          "id": 72367805,
+          "name": "Facebook",
+          "package": "com.facebook.katana",
+          "uname": "facebook",
+          "size": 103480472,
+          "icon": "https://pool.img.aptoide.com/appupdater/3a358df023050199d97d4ee04ca27f00_icon.png",
+          "graphic": "https://pool.img.aptoide.com/appupdater/6bf7f638d02f88283c699a82ce97b017_fgraphic.png",
+          "added": "2020-04-29 17:30:07",
+          "modified": "2025-11-17 19:18:11",
+          "updated": "2025-11-22 01:46:17",
+          "uptype": "webservice",
+          "store": {
+            "id": 2899481,
+            "name": "appupdater",
+            "avatar": "https://pool.img.aptoide.com/appupdater/64332bc9651ad8662141e9f5f5a2c034_ravatar.png",
+            "appearance": {
+              "theme": "default",
+              "description": "Update Apps"
+            },
+            "stats": {
+              "apps": 307342,
+              "subscribers": 93748,
+              "downloads": 0
+            }
+          },
+          "file": {
+            "vername": "539.0.0.54.69",
+            "vercode": 466816463,
+            "md5sum": "20b6539e762086891e80944ff62cdba3",
+            "filesize": 103480472,
+            "added": "2025-11-17 19:18:10",
+            "tags": [],
+            "malware": {
+              "rank": "TRUSTED"
+            },
+            "hardware": {
+              "sdk": 28,
+              "screen": "SMALL",
+              "gles": 2,
+              "cpus": [
+                "x86-64"
+              ],
+              "densities": [],
+              "dependencies": []
+            }
+          },
+          "stats": {
+            "downloads": 2000000000,
+            "pdownloads": 2000000000,
+            "rating": {
+              "avg": 2.77,
+              "total": 70
+            },
+            "prating": {
+              "avg": 3.83,
+              "total": 25863
+            }
+          },
+          "obb": null,
+          "appcoins": {
+            "advertising": false,
+            "billing": false,
+            "flags": []
+          },
+          "urls": {}
+        }
+      ]
+    }
+  }
+}
